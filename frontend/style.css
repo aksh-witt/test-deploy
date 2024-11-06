@@ -1,0 +1,1122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(fotos/background.jpeg);
+    background-size: cover; /* Faz com que a imagem preencha toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem */
+    width: 100%;
+    height: 225vh; /* Garante que a altura seja 100% da viewport */
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+.funcoes {
+    display: flex;
+    gap: 15px;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-top: 8px ;
+}
+
+.logo-2{
+    margin-left: 30px;
+    margin-top: 8px ;
+}
+
+.funcoes div i{
+    font-size: 35px;
+    color: whitesmoke;
+}
+
+.card-buy {
+    margin-left: 28px;
+    width: 1230px;
+    height: 470px;
+    margin-top: 30px;
+    background-color: blue;
+}
+
+.prd-ft {
+    width: 650px;
+    height: 400px;
+    margin-left: 185px;
+    background-color: beige;
+}
+
+.card-desc {
+    width: 300px;
+    height: 400px;
+    margin-left: 900px;
+    background-color: black;
+}
+
+.carrossel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#img-ca{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+
+/* box parte de baixo do carrossel */
+
+.box {
+    background-color: #1B1734;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    width: 485px;
+    border-radius: 15px;
+    margin-top: 100px;
+}
+
+.containerThree {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* card do vidio edit pika do sandro curio */
+
+
+.bigContainer {
+    background-color: #1B1734;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 114px;
+    height: 500px;
+    width: 1680px;
+    border-radius: 15px;
+}
+
+.textPromo {
+    padding-right: 25px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #f3f3f2;
+}
+
+p {
+    font-size: 36px;
+    color: #f3f3f2;
+}
+
+video {
+    border-radius: 5px
+}
+
+
+/* MENU drop */
+
+.config {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+  
+  /* Centralizando o drop-down */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px; /* Ajuste a altura conforme necessário */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+}
+
+.show {
+  display: block;
+}
+
+.exitBtn {
+  display: flex;
+  justify-items: stretch;
+  color: #a5a2a2; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  cursor: pointer; /* Mostra o ícone de cursor de mão */
+  font-size: 16px; /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Efeito suave ao mudar de cor */
+}
+
+
+/* Efeito de hover (quando o mouse passa por cima do botão) */
+.exitBtn:hover {
+    background-color: #e60000; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* perfil user */
+
+.profile-container {
+  margin: 50px;
+  padding: 20px;
+  background-color: #1B1734;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+}
+
+#noInfo{
+  color: white;
+}
+
+.cadastroPrd {
+color: wheat;
+}
+
+.nomePrd {
+  color: white;
+}
+
+/* card com hover vai dar um tal de trabalho */
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+    .card { height: 350px }
+
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+  .card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card:before {
+    background-image: url('./fotos/car-1.png');
+  }
+
+  .contentCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+  }
+
+  .contentCard > * + * {
+    margin-top: 1rem;
+  }
+
+.title {
+    font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.descri {
+    font-family: 'open_sansregular';
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.6em;
+    padding: 0.8em 1.3em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #067efe;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    transition: 0.5s!important;
+}
+
+.btn:hover { background-color: #fff; color:#067efe }
+
+@media (hover: hover) and (min-width: 600px) {
+  
+    .card:after { transform: translateY(0); }
+}
+
+.contentCard { transform: translateY(calc(100% - 4.5rem)); }
+.contentCard > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  
+  .card:hover:before,
+  .card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  
+  .card:hover:after,
+  .card:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card:hover .contentCard,
+  .card:focus-within .contentCard {
+    transform: translateY(0);
+  }
+
+  .card:hover .contentCard > *:not(title),
+  .card:focus-within .contentCard > *:not(title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(700ms / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+   .card:focus-within .contentCard,
+   .card:focus-within .contentCard > *:not(title) {
+    transition-duration: 0s;
+  }
+
+
+/* meu cerebro torrou então vou fazer do jeito mais estúpido possivel, se der tempo corrigir */
+
+.card2 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+    .card2 { height: 350px }
+
+}
+
+.card2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+  .card2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card2:before {
+    background-image: url('./fotos/car-2.png');
+  }
+
+  .contentCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+  }
+
+  .contentCard > * + * {
+    margin-top: 1rem;
+  }
+
+.title {
+    font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.descri {
+    font-family: 'open_sansregular';
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.6em;
+    padding: 0.8em 1.3em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #067efe;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    transition: 0.5s!important;
+}
+
+.btn:hover { background-color: #fff; color:#067efe }
+
+@media (hover: hover) and (min-width: 600px) {
+  
+    .card2:after { transform: translateY(0); }
+}
+
+.contentCard { transform: translateY(calc(100% - 4.5rem)); }
+.contentCard > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card2:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  
+  .card2:hover:before,
+  .card2:focus-within:before {
+    transform: translateY(-4%);
+  }
+  
+  .card2:hover:after,
+  .card2:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card2:hover .contentCard,
+  .card2:focus-within .contentCard {
+    transform: translateY(0);
+  }
+
+  .card2:hover .contentCard > *:not(title),
+  .card2:focus-within .contentCard > *:not(title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(700ms / 8);
+  }
+
+  .card2:focus-within:before, .card2:focus-within:after,
+   .card2:focus-within .contentCard,
+   .card2:focus-within .contentCard > *:not(title) {
+    transition-duration: 0s;
+  }
+
+
+/* E lá vamos nós */
+
+
+.card3 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+    .card3 { height: 350px }
+
+}
+
+.card3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+  .card3:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card3:before {
+    background-image: url('./fotos/car-3.png');
+  }
+
+  .contentCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+  }
+
+  .contentCard > * + * {
+    margin-top: 1rem;
+  }
+
+.title {
+    font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.descri {
+    font-family: 'open_sansregular';
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.6em;
+    padding: 0.8em 1.3em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #067efe;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    transition: 0.5s!important;
+}
+
+.btn:hover { background-color: #fff; color:#067efe }
+
+@media (hover: hover) and (min-width: 600px) {
+  
+    .card2:after { transform: translateY(0); }
+}
+
+.contentCard { transform: translateY(calc(100% - 4.5rem)); }
+.contentCard > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card3:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  
+  .card3:hover:before,
+  .card3:focus-within:before {
+    transform: translateY(-4%);
+  }
+  
+  .card3:hover:after,
+  .card3:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card3:hover .contentCard,
+  .card3:focus-within .contentCard {
+    transform: translateY(0);
+  }
+
+  .card3:hover .contentCard > *:not(title),
+  .card3:focus-within .contentCard > *:not(title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(700ms / 8);
+  }
+
+  .card3:focus-within:before, .card3:focus-within:after,
+   .card3:focus-within .contentCard,
+   .card3:focus-within .contentCard > *:not(title) {
+    transition-duration: 0s;
+  }
+
+/* card 4 */
+
+
+.card4 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+    .card4 { height: 350px }
+
+}
+
+.card4:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+  .card4:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card4:before {
+    background-image: url('./fotos/car-5.png');
+  }
+
+  .contentCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+  }
+
+  .contentCard > * + * {
+    margin-top: 1rem;
+  }
+
+.title {
+    font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.descri {
+    font-family: 'open_sansregular';
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.6em;
+    padding: 0.8em 1.3em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #067efe;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    transition: 0.5s!important;
+}
+
+.btn:hover { background-color: #fff; color:#067efe }
+
+@media (hover: hover) and (min-width: 600px) {
+  
+    .card4:after { transform: translateY(0); }
+}
+
+.contentCard { transform: translateY(calc(100% - 4.5rem)); }
+.contentCard > *:not(.title) {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card4:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  
+  .card4:hover:before,
+  .card4:focus-within:before {
+    transform: translateY(-4%);
+  }
+  
+  .card4:hover:after,
+  .card4:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card4:hover .contentCard,
+  .card4:focus-within .contentCard {
+    transform: translateY(0);
+  }
+
+  .card4:hover .contentCard > *:not(title),
+  .card4:focus-within .contentCard > *:not(title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(700ms / 8);
+  }
+
+  .card4:focus-within:before, .card4:focus-within:after,
+   .card4:focus-within .contentCard,
+   .card4:focus-within .contentCard > *:not(title) {
+    transition-duration: 0s;
+  }
+
+
+  /* card 5 */
+
+  .card5 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+    .card5 { height: 350px }
+
+}
+
+.card5:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+  .card5:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card5:before {
+    background-image: url('./fotos/car-4.png');
+  }
+
+
+
+
+  .btn:hover { background-color: #fff; color:#067efe }
+
+  @media (hover: hover) and (min-width: 600px) {
+    
+      .card5:after { transform: translateY(0); }
+  }
+  
+
+  .card5:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  
+  .card5:hover:before,
+  .card5:focus-within:before {
+    transform: translateY(-4%);
+  }
+  
+  .card5:hover:after,
+  .card5:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card5:hover .contentCard,
+  .card5:focus-within .contentCard {
+    transform: translateY(0);
+  }
+
+  .card5:hover .contentCard > *:not(title),
+  .card5:focus-within .contentCard > *:not(title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(700ms / 8);
+  }
+
+  .card5:focus-within:before, .card5:focus-within:after,
+   .card5:focus-within .contentCard,
+   .card5:focus-within .contentCard > *:not(title) {
+    transition-duration: 0s;
+  }
+
+/* energetico card kkkkkkkkkkk */
+
+.card6 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+    .card6 { height: 350px }
+
+}
+
+.card6:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+  .card6:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card6:before {
+    background-image: url('./fotos/car-6.png');
+  }
+
+
+
+
+  .btn:hover { background-color: #fff; color:#067efe }
+
+  @media (hover: hover) and (min-width: 600px) {
+    
+      .card6:after { transform: translateY(0); }
+  }
+  
+
+  .card6:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  
+  .card6:hover:before,
+  .card6:focus-within:before {
+    transform: translateY(-4%);
+  }
+  
+  .card6:hover:after,
+  .card6:focus-within:after {
+    transform: translateY(-50%);
+  }
+
+  .card6:hover .contentCard,
+  .card6:focus-within .contentCard {
+    transform: translateY(0);
+  }
+
+  .card6:hover .contentCard > *:not(title),
+  .card6:focus-within .contentCard > *:not(title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(700ms / 8);
+  }
+
+  .card6:focus-within:before, .card6:focus-within:after,
+   .card5:focus-within .contentCard,
+   .card6:focus-within .contentCard > *:not(title) {
+    transition-duration: 0s;
+  }
+
+/* carrinho  */
+.cart {
+  border: 2px solid #28a745; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  margin: 20px auto; 
+  max-width: 600px; /* Largura máxima do carrinho */
+  background-color: #f8f9fa;
+}
+
+/* Título */
+.cart h2 {
+  text-align: center; /* Centraliza o título */
+  color: #333; /* Cor do texto */
+}
+
+
+.cart-itens {
+  margin-bottom: 20px; 
+}
+
+/* Cada item do carrinho */
+.cart-item {
+  display: flex; /* Usando flexbox para layout */
+  justify-content: space-between; /* Espaço entre os elementos */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px 0; /* Espaçamento vertical */
+  border-bottom: 1px solid #ddd; /* Linha separadora entre itens */
+}
+
+/* Nome do produto */
+.cart-item .item-name {
+  font-weight: bold; /* Deixa o nome em negrito */
+}
+
+/* Preço do produto */
+.cart-item .item-price {
+  color: #28a745; 
+}
+
+
+.total {
+  text-align: center; 
+  font-size: 18px; 
+  color: #333; 
+}
+
+.total p {
+  color: black;
+}
+
+#totalValue {
+  color: black;
+}
+
+/* Botão de checkout */
+.checkout {
+  background-color: #28a745; 
+  color: white; 
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; /* Transição suave para cor de fundo */
+}
+
+/* Efeito de hover no botão de checkout */
+.checkout:hover {
+  background-color: #218838; 
+}
+
+
+
+  /* Media query para telas menores ou iguais a 1920x1080 */
+@media (max-width: 1920px) {
+  .card, .card2, .card3, .card4, .card5, .card6 {
+      width: 450px;  /* Reduz a largura dos cards */
+      height: 300px; /* Reduz a altura dos cards */
+      margin: 0px;  /* Ajusta o espaçamento */
+  }
+
+  .box{
+    width: 450px;  /* Reduz a largura dos cards */
+    height: 300px; /* Reduz a altura dos cards */
+  }
+  .containerThree, .bigContainer {
+      max-width: 1700px; /* Limita a largura máxima do container */
+      margin: 0 auto;    /* ajustar */
+      padding: 20px;
+  }
+
+  .carrossel img {
+      width: 400px; /* Reduz o tamanho das imagens do carrossel */
+  }
+
+  .logo img {
+      width: 120px; /* Reduz o tamanho do logo */
+  }
+
+  .logo-2 img {
+      width: 150px; /* Reduz o tamanho do segundo logo */
+  }
+
+  .funcoes .bi {
+      font-size: 1.8rem; /* Reduz o tamanho dos ícones de usuário, carrinho e configurações */
+  }
+
+
+  .vid video {
+      width: 320px; /* Reduz o tamanho do vídeo */
+  }
+
+  .bigContainer{
+    width: 1450px;  /* Reduz a largura dos cards */
+    height: 475px; /* Reduz a altura dos cards */
+    
+  }
+
+  body {
+    height: 265vh;
+  }
+
+}

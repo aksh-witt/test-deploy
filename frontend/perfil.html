@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="fotos/logo 1.png" width="125" alt=""></a>
+
+        </div>
+
+        <div class="logo-2">
+            <img src="fotos/logo 2.png" width="170" alt="">
+        </div>
+
+        <div class="funcoes">
+            <div class="user">
+                <a href="login/login.html"><i class="bi bi-person-fill"></i></a>
+            </div>
+            <div class="config">
+                <button ondblclick="toggleDropdown()" class="dropdown-icon"><i class="bi bi-gear-fill"></i></button>
+
+                <div class="dropdown-content" id="myDropdown">
+                    <button onclick="logout()" class="exitBtn">Sair</button>
+                    <a href="#">Perfil de usuario</a>
+                    <a href="#">Surprise</a>
+                </div>
+            </div>
+            <div class="carrinho">
+                <a href="carrinho.html"><i class="bi bi-cart"></i></a>
+            </div>
+        </div>
+    </header> 
+
+    <div class="profile-container">
+        <h2 id="noInfo">Bem-vindo, <span id="nome"></span>!</h2>
+        <p id="emInfo">Email: <span id="email"></span></p>
+    </div>
+
+    
+    <div id="cadastrar_produto" style="display: none; margin-bottom: 20px;">
+        
+        <p>Edição de produtos</p>
+        <form id="productForm" onsubmit="cadastrarProduto(event)">
+            <input type="text" id="nome" placeholder="Nome do produto" required>
+            <input type="text" id="preco" placeholder="Preço do produto" required>
+            <input type="file" id="file" required>
+            <textarea id="description" placeholder="Descrição do produto" required></textarea>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div id="formulario_edicao" style="display:none;">
+            <form id="editar_produto_form" onsubmit="editarProduto(event)">
+                <input type="hidden" id="product_id">
+                <label for="product_name">Nome do produto:</label>
+                <input class="formularioEdicao" type="text" id="product_name" name="name" required>
+                <label class="formularioEdicao" for="product_price">Preço:</label>
+                <input class="formularioEdicao" type="number" id="product_price" name="price" required>
+                <label for="product_description">Descrição:</label>
+                <textarea class="formularioEdicao" id="product_description" name="description" required></textarea>
+                <label for="product_image">Imagem</label>
+                <input class="formularioEdicao" type="file" id="product_image" name="image">
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="productList"></div>
+
+    <div id="Informacoes"></div>
+
+    <script src="front.js"></script>
+</body>
+</html>

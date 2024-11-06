@@ -1,0 +1,44 @@
+main {
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    /* background-color: aquamarine; */
+    background-image: url(background-log.png);
+    background-size: cover; /* Faz com que a imagem preencha toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem */
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.funcoes {
+    display: flex;
+    gap: 15px;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-top: 8px ;
+}
+
+.logo-2{
+    margin-left: 30px;
+    margin-top: 8px ;
+}
+
+.funcoes div i{
+    font-size: 35px;
+    color: whitesmoke;
+}

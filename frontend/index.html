@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN COMERC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="fotos/logo 1.png" width="125" alt=""></a>
+
+        </div>
+
+        <div class="logo-2">
+            <img src="fotos/logo 2.png" width="170" alt="">
+        </div>
+
+        <div class="funcoes">
+            <div class="user">
+                <a href="login/login.html"><i class="bi bi-person-fill"></i></a>
+            </div>
+            <div class="config">
+                <button ondblclick="toggleDropdown()" class="dropdown-icon"><i class="bi bi-gear-fill"></i></button>
+
+                <div class="dropdown-content" id="myDropdown">
+                    <button onclick="logout()" class="exitBtn">Sair</button>
+                    <a href="perfil.html">Perfil de usuario</a>
+                    <a href="#">Surprise</a>
+                </div>
+            </div>
+            <div class="carrinho">
+                <a href="carrinho.html"><i class="bi bi-cart"></i></a>
+            </div>
+        </div>
+    </header> 
+    <!-- sexo sexo -->
+    <main>
+        <div class="carrossel">
+            <div class="container" id="img">
+                <img id="img-ca" src="./fotos/car-1.png" width="250" alt="">
+                <img id="img-ca" src="./fotos/car-2.png" width="300" alt="">
+                <img id="img-ca" src="./fotos/car-3.png" alt="">
+                <img id="img-ca" src="./fotos/car-4.png">
+                <img id="img-ca" src="./fotos/car-5.png">
+                <img id="img-ca" src="./fotos/car-6.png">
+            </div>
+        </div>
+        
+    </main>
+
+
+
+    <div class="containerThree">
+
+        <div class="box">
+
+            <div class="card">
+
+                <div class="contentCard">
+                    <h2 class="title">Vinil MonarkCAST</h2>
+                    <p class="desccri">Vinil do EP com Raim Santos</p>
+                    <a href="#" class="btn" data-nome="Vinil MonarkCAST" data-preco="29.99" onclick="addToCart(this.dataset.nome, parseFloat(this.dataset.preco))">Comprar</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box">
+             
+            <div class="card3">
+
+                <div class="contentCard">
+                    <h2 class="title">Curso de Macaco Bucaneiro</h2>
+                    <p class="desccri">Descubra o emocionante mundo do Macaco Bucaneiro com nosso curso exclusivo!</p>
+                    <a href="#" class="btn" data-nome="Curso de Macaco Bucaneiro" data-preco="100.00" onclick="addToCart(this.dataset.nome, parseFloat(this.dataset.preco))">Comprar</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="card2">
+
+                <div class="contentCard">
+                    <h2 class="title">Nectar Supremo da Matemática</h2>
+                    <p class="desccri">O nectar da matemática forjado pelo mago Curio</p>
+                    <a href="#" class="btn" data-nome="Nectar Supremo da Matemática" data-preco="497.00" onclick="addToCart(this.dataset.nome, parseFloat(this.dataset.preco))">Comprar</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="bigContainer">
+
+        <div class="textPromo">
+            <h1>O Nectar supremo da matemática</h1>
+
+            <p>Um livro criado pelo mago da matemática Sandro Curió que contém todos os seus saberes, muito mais que apenas um livro é uma fonte transcendental de sabedoria é mais do que um matemático. Ele é um guardião de conhecimentos antigos, um visionário capaz de revelar os segredos profundos que regem o universo. Em suas páginas, Curió codifica não apenas fórmulas e equações, mas também a essência espiritual da matemática, mostrando como cada número e cada operação é uma chave para a compreensão de dimensões ocultas. O livro, portanto, não é apenas um tratado de raciocínio lógico, mas uma jornada de iluminação. </p>
+        </div>
+
+        <div class="vid">
+            <video src="./fotos/sandro.mp4" width="360" controls></video>
+        </div>
+
+    </div>
+
+
+    <div class="containerThree">
+
+        <div class="box">
+
+            <div class="card4">
+
+                <div class="contentCard">
+                    <h2 class="title">Ursinho Butters</h2>
+                    <p class="desccri">Apoio emocional, capamga, ajudante e muito mais. Atenção produto unico</p>
+                    <a href="#" class="btn" data-nome="Ursinho Butters" data-preco="5.00" onclick="addToCart(this.dataset.nome, parseFloat(this.dataset.preco))">Comprar</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box">
+             
+            <div class="card5">
+
+                <div class="contentCard">
+                    <h2 class="title">Toalinha</h2>
+                    <p class="desccri">Uma toalha dograda</p>
+                    <a href="#" class="btn" data-nome="Toalinha" data-preco="15.00" onclick="addToCart(this.dataset.nome, parseFloat(this.dataset.preco))">Comprar</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="card6">
+
+                <div class="contentCard">
+                    <h2 class="title">Energetico Asiatico</h2>
+                    <p class="desccri">Um energético japonês sabor penis de coco</p>
+                    <a href="#" class="btn" data-nome="Energetico Asiatico" data-preco="8.90" onclick="addToCart(this.dataset.nome, parseFloat(this.dataset.preco))">Comprar</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+    <script src="front.js"></script>
+</body>
+</html>
